@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  font-family: Arial, sans-serif;
+}
+.search-container {
+  position: relative;
+  width: 300px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+.suggestion:hover {
+  background-color: #f0f0f0;
+}
